@@ -1,12 +1,283 @@
-<!DOCTYPE html> 
-<html lang="en">
-<title>Homepage</title>
-<h1>My Homepage</h1>
-<img src="https://yeam6834.github.io/images/UNCLogo.webp" alt= UNC>
-<h2>Here is a list of some of my sites! Click on any one to view.</h2>
 
-<ol>
-   <li> <a href="https://yeam6834.github.io/profile.html">My Profile</a>. </li>
-  <li> <a href="https://yeam6834.github.io/amuse.html">My Funny Page</a>. </li>
- <li> <a href="https://yeam6834.github.io/inspire.html">My Hero</a>. </li>
-  </ol>
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <section id="fixed-banner" class="fixed-banner">
+    <div class="container">
+      <p><img
+        alt="Profile Image"
+        class="img-fluid rounded shadow-lg"
+        src="assets/favicon.png" <!-- Replace with your image path --
+        height="auto"
+        width="30px" <!-- Adjust size as needed -->      Samuel Yeamans - University of Northern Colorado</p>
+      <a href="#contact" class="cta-btn">Contact Me</a>
+    </div>
+  </section>
+  
+  
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <title>Samuel Yeamans</title>
+    <meta name="keywords" content="Samuel Yeamans, IS" />
+    <meta name="description" content="Samuel Yeamans | IS" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+  </head>
+
+  <body>
+    <div id="top"></div>
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+           <span class="text-color-main">Samuel M. Yeamans </span>
+          <br />
+          Computer Information Systems
+        
+        </h1>
+    
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >About Me</a
+          >
+        </p>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                I am currently a Computer Information Sytsems major at the University of Northern Colorado. Vast experience in data analysis, data visualization, project management, etc.
+
+              </p>
+              <p class="about-wrapper__info-text">
+                My aspirations are to pursue a career in the Data Analytics / IT field. Outside of this, I enjoy skiing, playing hockey, and hanging out with friends.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/resume.pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Data Visualization</h3>
+                <div>
+                  <p class="mb-4">
+                    Individual College project where I was tasked with visually representing the comparison between price and square feet in Nothern Colorado homes. In addition to that, I also used color and size to represent town and number of baths respectively.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="examples-project2.html"
+                >
+                  See All Visuals
+                </a>
+                <a
+                rel="noreferrer"
+                target="_blank"
+                class="cta-btn text-color-main"
+                href="assets/dv.xlsx"
+              >
+                Raw Data
+              </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/DV1.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Wireframes</h3>
+                <div>
+                  <p class="mb-4">
+                    Over my college years I have created many different hypothetical wireframes. These wireframes involve a proposed app, website, or software. It is then up to me to visually represent a rough draft of what it may look like. In this example, I created a wireframe for my new mobile game, Tic Tac GO! 
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="examples-project0.html"
+                >
+                  See More Examples
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/TTG.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Workflows</h3>
+                <div>
+                  <p class="mb-4">
+                  What do all wireframes rewuier? A workflow to go with it. Workflows are essential to companies as they help to map out what exactly needs to be done in any given task. I have honed into my project management skills over the years creating these.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="examples-project1.html"
+                >
+                  See More Examples
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/WF1.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text">I would love to get in touch with you.</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:sammyyeamans23@gmail.com"
+            >Email Me</a
+          >
+        </div>
+        <div class="contact-wrapper load-hidden">
+          
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="https://www.linkedin.com/in/samuel-yeamans-056242253/"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+        
+          <a rel="noreferrer" href="https://www.linkedin.com/in/samuel-yeamans-056242253/" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://yeam6834.github.io/index.html" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">           
+          <img
+              alt="Profile Image"
+              class="img-fluid rounded shadow-lg"
+              src="assets/favicon.png" <!-- Replace with your image path --
+              height="auto"
+              width="30px" <!-- Adjust size as needed -->
+              -  Samuel M. Yeamans   -   sammyyeamans23@gmail.com   -   (313) 618-3421
+        </p>      
+      </div>
+    </footer>
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
