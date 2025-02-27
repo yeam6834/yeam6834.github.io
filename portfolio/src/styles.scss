@@ -1,0 +1,69 @@
+@import "./sass/vendors/bootstrap.scss";
+
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/helpers";
+
+@import "./sass/base/base";
+@import "./sass/base/typography";
+
+@import "./sass/components/buttons";
+
+@import "./sass/layout/footer";
+@import "./sass/layout/sections";
+
+@import "./sass/sections/about";
+@import "./sass/sections/contact";
+@import "./sass/sections/hero";
+@import "./sass/sections/projects";
+
+#fixed-banner {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #000046; /* Banner background color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the banner */
+  }
+  
+  #fixed-banner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+  
+  #fixed-banner p {
+    margin: 0;
+    font-size: 1.1em;
+  }
+  
+  #fixed-banner .cta-btn {
+    background-color: #fff;
+    color: #000046;
+    padding: 8px 15px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  #fixed-banner .cta-btn:hover {
+    background-color: #000046;
+    color: white;
+  }
+  
+  /* Add padding to the top of the body to avoid content being hidden behind the banner */
+  body {
+    padding-top: 0px; /* Adjust this value to match the height of the sticky banner */
+  }
+  
+
+  
+  
+
+  
+  
