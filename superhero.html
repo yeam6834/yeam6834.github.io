@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Superheroes</title>
+        <link rel="stylesheet" href="css/main.css">
+
+        <style>
+            body
+            {
+                background-color: rgb(17, 34, 166);
+            }
+            h1, h2, h3
+            {
+                color: white;
+            }
+            #superman
+            {
+                color: red;
+            }
+            .colhead
+            {
+                color:purple
+            }
+            h2
+            {
+                color: purple;
+            }
+            img
+            {
+                height: 100px;
+            }
+            td, th
+            {
+                border: 2px solid black;
+                padding: 15px;
+                background-color: lightsalmon;
+                
+            }
+            table
+            {
+                border-collapse: collapse;
+            }
+            th
+            {
+                background-color: gray;
+                font-size: 18px;
+            }
+            li:nth-child(1)
+            {
+                color: darkgreen;
+            }
+            table ul
+            {
+                color: aqua;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>My Superheroes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th class="colhead">Name</th>
+                    <th class="colhead">Alias</th>
+                    <th class="colhead">Image</th>
+                    <th class="colhead">Superpowers</th>
+                    <th class="colhead">Weaknesses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Batman</th>
+                    <td>Bruce&nbsp;Wayne</td>
+                    <td><a href="images/batmanprofile.jpg"><img src="images/batmanprofile.jpg" alt="Batman Pic"></a></td>
+                    <td>N/A</td>
+                    <td>
+                        <ul>
+                            <li>Human/Vulnerable</li>
+                            <li>Childhood Trauma</li>
+                            <li>Won't Kill</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th id="superman">Superman</th>
+                    <td>Clark&nbsp;Kent</td>
+                    <td><a href="images/superman.jpg"><img src="images/superman.jpg" alt="Superman Pic"></a></td>
+                    <td>
+                        <ul>
+                            <li>Invulnerable</li>
+                            <li>Flight</li>
+                            <li>Super Strong</li>
+                            <li>X-Ray Vision</li>
+                            <li>Laser Eyes</li>
+                        </ul>
+                    </td>
+                    <td>
+                        Kryptonite
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Some other Superheroes:
+            <ul>
+                <li>Green Lantern</li>
+                <li>Wolverine</li>
+            </ul>        
+        </p>
+        
+    </body>
+</html>
