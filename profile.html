@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<title>Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Header */
+        h1 {
+            background-color: #00274C;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* Profile Section */
+        .profile-container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile Image */
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #00274C;
+            margin-top: 15px;
+        }
+
+        /* Paragraphs */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            padding: 0 15px;
+        }
+
+        /* Home Button */
+        .home-button img {
+            height: 50px;
+            transition: 0.3s;
+        }
+
+        .home-button img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
-<h1>Sam Yeamans</h1>
+
+    <h1>Sam Yeamans</h1>
+
+    <div class="profile-container">
         <img src="https://yeam6834.github.io/images/profile.jpeg" alt="Sam Yeamans profile picture">
-        <p>My name is Sam Yeamans, I enjoy playing hockey, video games, and hanging out with friends. I am a junior here at MCB studying CIS.</p>
-        <p><a href="index.html"><img height="50" src="images/homebutton.png" alt="Home Button"></a></p>
+        <p>My name is Sam Yeamans. I enjoy playing hockey, video games, and hanging out with friends. I am a junior here at MCB studying CIS.</p>
+    </div>
+
+    <p class="home-button">
+        <a href="index.html">
+            <img src="images/homebutton.png" alt="Home Button">
+        </a>
+    </p>
+
 </body>
+</html>
