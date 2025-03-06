@@ -1,16 +1,130 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<title>Homepage</title>
-<h1>My Homepage</h1>
-<img src="https://yeam6834.github.io/images/UNCLogo.webp" alt= UNC>
-<h2>Here is a list of some of my sites! Click on any one to view.</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-<ol>
-   <li> <a href="https://yeam6834.github.io/profile.html">My Profile</a> </li>
-  <li> <a href="https://yeam6834.github.io/amuse.html">My Funny Page</a> </li>
- <li> <a href="https://yeam6834.github.io/inspire.html">My Hero</a> </li>
- <li> <a href="https://yeam6834.github.io/superhero.html">Superheroes!</a> </li>
+        /* Header */
+        header {
+            background-color: #00274C;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-  </ol>
+        /* Logo */
+        .logo img {
+            max-width: 500px;
+            margin: 20px auto;
+        }
 
+        /* Navigation */
+        nav {
+            background-color: #ffcc00;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #00274C;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Links */
+        ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        ol li {
+            background: #00274C;
+            padding: 12px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        ol li:hover {
+            background: #ffcc00;
+        }
+
+        ol li a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+
+        ol li:hover a {
+            color: #00274C;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #00274C;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Welcome to My Homepage</header>
+
+    <div class="logo">
+        <img src="https://yeam6834.github.io/images/UNCLogo.webp" alt="UNC Logo">
+    </div>
+
+    <nav>
+        <a href="https://yeam6834.github.io/profile.html">Profile</a>
+        <a href="https://yeam6834.github.io/amuse.html">Funny Page</a>
+        <a href="https://yeam6834.github.io/inspire.html">My Hero</a>
+        <a href="https://yeam6834.github.io/superhero.html">Superheroes</a>
+    </nav>
+
+    <div class="container">
+        <h2>Explore My Pages</h2>
+        <ol>
+            <li> <a href="https://yeam6834.github.io/profile.html">My Profile</a> </li>
+            <li> <a href="https://yeam6834.github.io/amuse.html">My Funny Page</a> </li>
+            <li> <a href="https://yeam6834.github.io/inspire.html">My Hero</a> </li>
+            <li> <a href="https://yeam6834.github.io/superhero.html">Superheroes!</a> </li>
+        </ol>
+    </div>
+
+    <footer>© 2025 My Homepage | Samuel Yeamans</footer>
+
+</body>
 </html>
