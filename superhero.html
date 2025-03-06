@@ -6,69 +6,74 @@
         <link rel="stylesheet" href="css/main.css">
 
         <style>
-            body
-            {
-               background-image: url('https://static.vecteezy.com/system/resources/previews/010/796/593/non_2x/new-blue-comic-book-background-flash-vintage-pop-art-superhero-background-for-comics-vector.jpg'); /* Replace with your image file path */
-            background-size: cover; 
-            background-position: center; 
-            background-attachment: fixed; 
+            body {
+                background-image: url('https://static.vecteezy.com/system/resources/previews/010/796/593/non_2x/new-blue-comic-book-background-flash-vintage-pop-art-superhero-background-for-comics-vector.jpg'); /* Replace with your image file path */
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
             }
-            h1, h2, h3
-            {
+            
+            h1, h2, h3 {
                 color: white;
-                    text-align: center;
+                text-align: center;
+            }
 
-            }
-    
-            }
-            .colhead
-            {
-                color:white
-            }
-            h2
-            {
+            .colhead {
                 color: white;
             }
-            img
-            {
-                height: 100px;
+
+            h2 {
+                color: white;
             }
-            td, th
-            {
+
+            img {
+                height: 100px;
+                border-radius: 10px;
+                transition: transform 0.3s ease;
+            }
+
+            /* Hover effect for images */
+            img:hover {
+                transform: translateY(-10px); /* Raises the image by 10px */
+            }
+
+            td, th {
                 border: 2px solid black;
                 padding: 15px;
-                 background-color: lightgray; 
-           
-    text-align: center;
-
-                
+                background-color: lightgray;
+                text-align: center;
             }
-          
-            img {
-    border-radius: 10px;
-}
-            table
-            {
+
+            table {
                 border-collapse: collapse;
-    margin: 0 auto;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
-
+                margin: 0 auto;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             }
-            th
-            {
-                background-color: yellow;
+
+            th {
+                background-color: #ffcc00; /* Adjusted to match index.html color */
                 font-size: 18px;
             }
-            li:nth-child(1)
-            {
+
+            /* Remove bullet points */
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
                 color: black;
             }
-            table ul
-            {
-                color: black;
+
+            /* Hover effect for home button */
+            .home-button img {
+                transition: transform 0.3s ease;
+            }
+
+            .home-button img:hover {
+                transform: translateY(-10px); /* Raises the home button by 10px */
             }
         </style>
-
     </head>
     <body>
         <h1>Superheroes</h1>
@@ -87,11 +92,13 @@
                     <th id="spiderman">Spider Man</th>
                     <td>Peter&nbsp;Parker</td>
                     <td><a href="images/spidermamn.png"><img src="images/spidermamn.png" alt="Spider Man Pic"></a></td>
-                    <td><ul>
-                            <li>Strentgh</li>
+                    <td>
+                        <ul>
+                            <li>Strength</li>
                             <li>Spider-sense</li>
                             <li>Shoots Webs</li>
-                        </ul></td>
+                        </ul>
+                    </td>
                     <td>
                         <ul>
                             <li>Ethyl Chloride</li>
@@ -114,11 +121,12 @@
                         </ul>
                     </td>
                     <td>
-<ul>
+                        <ul>
                             <li>Can't Control Anger</li>
                             <li>Adamantium</li>
                             <li>Gamma Radiation</li>
-                        </ul>                    </td>
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
                     <th id="drstrange">Doctor Strange</th>
@@ -134,12 +142,13 @@
                         </ul>
                     </td>
                     <td>
-<ul>
+                        <ul>
                             <li>Slow</li>
                             <li>Melee Attacks</li>
-                        </ul>                    </td>
+                        </ul>
+                    </td>
                 </tr>
-                 <tr>
+                <tr>
                     <th id="ironman">Iron Man</th>
                     <td>Tony&nbsp;Stark</td>
                     <td><a href="images/ironman.webp"><img src="images/ironman.webp" alt="Iron Man Pic"></a></td>
@@ -153,14 +162,18 @@
                         </ul>
                     </td>
                     <td>
-<ul>
+                        <ul>
                             <li>Running Out of Power</li>
                             <li>Vulnerable to being shot down from sky</li>
-                        </ul>                    </td>
+                        </ul>
+                    </td>
                 </tr>
             </tbody>
         </table>
- <p style="text-align: center;"><a href="index.html"><img height="50" src="images/homebutton.png" alt="Home Button"></a></p>
-        
+        <p style="text-align: center;">
+            <a href="index.html" class="home-button">
+                <img height="50" src="images/homebutton.png" alt="Home Button">
+            </a>
+        </p>
     </body>
 </html>
