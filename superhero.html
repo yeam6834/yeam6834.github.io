@@ -1,179 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Superheroes</title>
-        <link rel="stylesheet" href="css/main.css">
-
-        <style>
-            body {
-                background-image: url('https://static.vecteezy.com/system/resources/previews/010/796/593/non_2x/new-blue-comic-book-background-flash-vintage-pop-art-superhero-background-for-comics-vector.jpg'); /* Replace with your image file path */
-                background-size: cover;
-                background-position: center;
-                background-attachment: fixed;
-            }
-            
-            h1, h2, h3 {
-                color: white;
-                text-align: center;
-            }
-
-            .colhead {
-                color: bla;
-            }
-
-            h2 {
-                color: white;
-            }
-
-            img {
-                height: 100px;
-                border-radius: 10px;
-                transition: transform 0.3s ease;
-            }
-
-            /* Hover effect for images */
-            img:hover {
-                transform: translateY(-10px); /* Raises the image by 10px */
-            }
-
-            td, th {
-                border: 2px solid black;
-                padding: 15px;
-                background-color: lightgray;
-                text-align: center;
-            }
-
-            table {
-                border-collapse: collapse;
-                margin: 0 auto;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
-
-            th {
-                background-color: #ffcc00; /* Adjusted to match index.html color */
-                font-size: 18px;
-            }
-
-            /* Remove bullet points */
-            ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            li {
-                color: black;
-            }
-
-            /* Hover effect for home button */
-            .home-button img {
-                transition: transform 0.3s ease;
-            }
-
-            .home-button img:hover {
-                transform: translateY(-10px); /* Raises the home button by 10px */
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Superheroes</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th class="colhead">Name</th>
-                    <th class="colhead">Alias</th>
-                    <th class="colhead">Image</th>
-                    <th class="colhead">Superpowers</th>
-                    <th class="colhead">Weaknesses</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th id="spiderman">Spider Man</th>
-                    <td>Peter&nbsp;Parker</td>
-                    <td><a href="images/spidermamn.png"><img src="images/spidermamn.png" alt="Spider Man Pic"></a></td>
-                    <td>
-                        <ul>
-                            <li>Strength</li>
-                            <li>Spider-sense</li>
-                            <li>Shoots Webs</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Ethyl Chloride</li>
-                            <li>Water</li>
-                            <li>Needs high structures to swing off of</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th id="hulk">The Incredible Hulk</th>
-                    <td>Bruce&nbsp;Banner</td>
-                    <td><a href="images/hulk.webp"><img src="images/hulk.webp" alt="Hulk Pic"></a></td>
-                    <td>
-                        <ul>
-                            <li>Speed</li>
-                            <li>Super Human Strength</li>
-                            <li>Leaping</li>
-                            <li>Immortal</li>
-                            <li>Shapeshifting</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Can't Control Anger</li>
-                            <li>Adamantium</li>
-                            <li>Gamma Radiation</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th id="drstrange">Doctor Strange</th>
-                    <td>Steven&nbsp;Strange</td>
-                    <td><a href="images/drstrange.webp"><img src="images/drstrange.webp" alt="Dr Strange Pic"></a></td>
-                    <td>
-                        <ul>
-                            <li>Magic</li>
-                            <li>Time Manipulation</li>
-                            <li>Teleportation</li>
-                            <li>Telepathy</li>
-                            <li>Flight</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Slow</li>
-                            <li>Melee Attacks</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th id="ironman">Iron Man</th>
-                    <td>Tony&nbsp;Stark</td>
-                    <td><a href="images/ironman.webp"><img src="images/ironman.webp" alt="Iron Man Pic"></a></td>
-                    <td>
-                        <ul>
-                            <li>Powered Armor</li>
-                            <li>Strength</li>
-                            <li>Flying</li>
-                            <li>Weapons</li>
-                            <li>Technology</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Running Out of Power</li>
-                            <li>Vulnerable to being shot down from sky</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="text-align: center;">
-            <a href="index.html" class="home-button">
-                <img height="50" src="images/homebutton.png" alt="Home Button">
-            </a>
-        </p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Superheroes</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/010/796/593/non_2x/new-blue-comic-book-background-flash-vintage-pop-art-superhero-background-for-comics-vector.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        th, td {
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+            transition: background 0.3s ease-in-out;
+        }
+        
+        th {
+            background-color: #ffcc00;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        
+        td:hover {
+            background-color: #e0e0e0;
+        }
+        
+        img {
+            height: 100px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.1);
+        }
+        
+        .home-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .home-button img {
+            transition: transform 0.3s ease;
+        }
+        
+        .home-button img:hover {
+            transform: scale(1.1);
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Superheroes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Alias</th>
+                <th>Image</th>
+                <th>Superpowers</th>
+                <th>Weaknesses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Spider Man</td>
+                <td>Peter Parker</td>
+                <td><a href="images/spidermamn.png"><img src="images/spidermamn.png" alt="Spider Man Pic"></a></td>
+                <td>
+                    <ul>
+                        <li>Strength</li>
+                        <li>Spider-sense</li>
+                        <li>Shoots Webs</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Ethyl Chloride</li>
+                        <li>Water</li>
+                        <li>Needs high structures to swing off of</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>The Incredible Hulk</td>
+                <td>Bruce Banner</td>
+                <td><a href="images/hulk.webp"><img src="images/hulk.webp" alt="Hulk Pic"></a></td>
+                <td>
+                    <ul>
+                        <li>Speed</li>
+                        <li>Super Human Strength</li>
+                        <li>Leaping</li>
+                        <li>Immortal</li>
+                        <li>Shapeshifting</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Can't Control Anger</li>
+                        <li>Adamantium</li>
+                        <li>Gamma Radiation</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Doctor Strange</td>
+                <td>Steven Strange</td>
+                <td><a href="images/drstrange.webp"><img src="images/drstrange.webp" alt="Dr Strange Pic"></a></td>
+                <td>
+                    <ul>
+                        <li>Magic</li>
+                        <li>Time Manipulation</li>
+                        <li>Teleportation</li>
+                        <li>Telepathy</li>
+                        <li>Flight</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Slow</li>
+                        <li>Melee Attacks</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Iron Man</td>
+                <td>Tony Stark</td>
+                <td><a href="images/ironman.webp"><img src="images/ironman.webp" alt="Iron Man Pic"></a></td>
+                <td>
+                    <ul>
+                        <li>Powered Armor</li>
+                        <li>Strength</li>
+                        <li>Flying</li>
+                        <li>Weapons</li>
+                        <li>Technology</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Running Out of Power</li>
+                        <li>Vulnerable to being shot down from sky</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="home-button">
+        <a href="index.html">
+            <img height="50" src="images/homebutton.png" alt="Home Button">
+        </a>
+    </div>
+</body>
 </html>
