@@ -146,3 +146,19 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+/* Home Button */
+.home-button {
+    display: block;
+    margin: 30px auto 0;
+}
+
+.home-button img {
+    height: 50px;
+    width: auto;
+    transition: 0.3s;
+    border: none;
+}
+
+.home-button img:hover {
+    transform: scale(1.1);
+}
