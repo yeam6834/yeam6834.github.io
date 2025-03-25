@@ -162,3 +162,9 @@ body {
 .home-button img:hover {
     transform: scale(1.1);
 }
+.game-section h2 {
+    text-align: center;
+    border-left: none;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
