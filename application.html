@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Geometry Dash</title>
-    <link rel="stylesheet" href="css/application.css">
+  <meta charset="UTF-8">
+  <title>Geometry Dash Application</title>
+  <link rel="stylesheet" href="css/application.css">
 </head>
 <body>
+  <div class="container">
     <header>
-        <h1>Geometry Dash</h1>
+      <h1>Geometry Dash</h1>
     </header>
     
     <main>
-        <section class="game-container">
-            <iframe src="https://www.onlinegames.io/geometry-dash/" style="width: 90vw; height: 45vw"></iframe>
-        </section>
+      <section class="game-section">
+        <div class="game-container">
+          <iframe src="https://geometrydash.io/game/geometry-dash/" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+        </div>
+      </section>
+      
+      <section class="overview-section">
+        <h2>Overview</h2>
+        <p>Geometry Dash is a rhythm-based platformer game where timing and precision are key. You must navigate your square character through levels filled with obstacles, and enjoy the music!</p>
+        <div class="image-gallery">
+          <img src="images/geometry-dash1.png" alt="Geometry Dash gameplay screenshot">
+          <img src="images/geometry-dash2.png" alt="Geometry Dash character">
+          <img src="images/geometry-dash3.png" alt="Geometry Dash level example">
+        </div>
+      </section>
+      
+      <section class="instructions-section">
+        <h2>How to Play</h2>
+        <p>Take a moment to look at the controls below. Once ready, try to complete the levels! The further levels you go, the more complex they become!</p>
         
-        <section class="game-info">
-            <h2>Overview</h2>
-            <p>Geometry Dash is a rhythm-based action platformer game that will test your reflexes and patience. Navigate your way through dangerous passages and spiky obstacles. With its colorful geometric art style and pumping soundtrack, this game offers an intense gaming experience that's both challenging and addictive.</p>
-            
-            <div class="image-gallery">
-                <img src="images/dragon.png" alt="Game character" class="game-image">
-                <img src="images/geometry-level.png" alt="Game level example" class="game-image">
-                <img src="images/geometry-complete.png" alt="Level complete screen" class="game-image">
-            </div>
-            
-            <h2>How to Play</h2>
-            <p>The goal is simple but challenging: guide your character through each level without hitting any obstacles. Tap or click to jump and navigate through the geometric landscape. Timing is everything in this game - you'll need quick reflexes and good rhythm to succeed!</p>
-            
-            <table class="instructions-table">
-                <thead>
-                    <tr>
-                        <th>Action</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Click/Tap</td>
-                        <td>Jump or fly upward</td>
-                    </tr>
-                    <tr>
-                        <td>Hold</td>
-                        <td>Continuous flying (in some modes)</td>
-                    </tr>
-                    <tr>
-                        <td>Release</td>
-                        <td>Fall downward</td>
-                    </tr>
-                    <tr>
-                        <td>Practice Mode</td>
-                        <td>Train with checkpoints</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <table class="controls-table">
+          <thead>
+            <tr>
+              <th>Control</th>
+              <th>Action</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Click/Tap Spacebar</td>
+              <td>Jump</td>
+              <td>Press to jump over obstacles and pits</td>
+            </tr>
+            <tr>
+              <td>Hold Spacebar</td>
+              <td>Fly/Hover</td>
+              <td>Hold to continuously fly when in flight mode</td>
+            </tr>
+            <tr>
+              <td>Release Spacebar</td>
+              <td>Stop Flying</td>
+              <td>Release to drop back down when flying</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 Geometry Dash - Test your reflexes in this rhythm-based platformer</p>
+      <p>Enjoy playing Geometry Dash! &nbsp;|&nbsp; Website made by Sam Yeamans. &nbsp;| &nbsp; Game embedded from geometrydash.io</p>
     </footer>
+  </div>
 </body>
 </html>
