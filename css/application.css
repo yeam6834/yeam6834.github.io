@@ -37,6 +37,12 @@ h2 {
     border-left: 5px solid var(--secondary-color);
     padding-left: 15px;
 }
+h3 {
+    font-family: 'PushStart', cursive;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-top: 30px;
+}
 
 p {
     font-size: 1.1rem;
