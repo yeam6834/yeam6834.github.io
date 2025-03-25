@@ -163,7 +163,7 @@ body {
     transform: scale(1.1);
 }
 .game-section h2 {
-    text-align: center;
+    text-align: left;
     border-left: none;
     color: var(--accent-color);
     margin-bottom: 20px;
