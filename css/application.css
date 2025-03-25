@@ -1,8 +1,8 @@
 /* Custom Font Declarations */
 @font-face {
     font-family: 'GeometryFont';
-    src: url('../css/fonts/geometryfont.woff2') format('woff2'),
-         url('../css/fonts/geometryfont.woff') format('woff');
+    src: url('/css/fonts/8-bit-pusab.ttf') format('ttf'),
+       
     font-weight: normal;
     font-style: normal;
 }
