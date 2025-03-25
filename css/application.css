@@ -52,10 +52,14 @@ p {
 .game-section {
     margin-bottom: 40px;
     text-align: center;
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 .game-container {
-    width: 80vw;
     height: 45vw;
     position: relative;
     margin: 0 auto;
@@ -63,6 +67,11 @@ p {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 119, 0, 0.5);
     overflow: hidden;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .game-container iframe {
