@@ -1,200 +1,148 @@
-/* Custom Font Declarations */
 @font-face {
-    font-family: 'GeometryFont';
-    src: url('/css/fonts/8-bit-pusab.ttf') format('ttf'),
-       
+    font-family: 'PushStart';
+    src: url('../css/fonts/pushstart.woff2') format('woff2'),
+         url('../css/fonts/pushstart.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'DashText';
-    src: url('../css/fonts/dashtext.woff2') format('woff2'),
-         url('../css/fonts/dashtext.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Root styling */
-:root {
-    --primary-color: #2d70d8;
-    --secondary-color: #22ffaa;
-    --background-color: #121212;
-    --text-color: #f0f0f0;
-    --accent-color: #ff5588;
-}
-
-/* Global styles */
-body {
-    background-color: var(--background-color);
-    background-image: url("../images/geometry-bg.png");
-    background-repeat: repeat;
-    background-size: 250px;
-    background-attachment: fixed;
-    background-blend-mode: color-dodge;
-    color: var(--text-color);
-    font-family: 'DashText', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-/* Header styles */
-header {
-    background-color: rgba(0, 0, 0, 0.85);
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+}
+
+header {
     text-align: center;
-    border-bottom: 4px solid var(--accent-color);
-    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 h1 {
-    font-family: 'GeometryFont', 'Arial Black', sans-serif;
-    color: var(--secondary-color);
-    font-size: 4rem;
+    font-family: 'PushStart', cursive;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 119, 0, 0.7), 0 0 20px rgba(255, 119, 0, 0.5);
     margin: 0;
-    text-shadow: 3px 3px 6px #000, 0 0 20px var(--accent-color);
-    letter-spacing: 5px;
-    transition: transform 0.3s ease;
-}
-
-h1:hover {
-    transform: scale(1.05);
-}
-
-/* Main content styles */
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 25px rgba(255, 69, 0, 0.4);
-}
-
-/* Game container */
-.game-container {
-    margin: 20px 0;
-    text-align: center;
-}
-
-iframe {
-    border: 5px solid var(--accent-color);
-    border-radius: 8px;
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
-}
-
-/* Section styling */
-.game-info {
-    padding: 25px;
-    background-color: rgba(20, 20, 20, 0.7);
-    border-radius: 8px;
-    margin-top: 30px;
-    border-left: 3px solid var(--secondary-color);
+    letter-spacing: 4px;
 }
 
 h2 {
-    font-family: 'GeometryFont', 'Arial Black', sans-serif;
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 10px;
+    font-family: 'PushStart', cursive;
+    color: var(--secondary-color);
+    font-size: 2rem;
     margin-top: 30px;
-    font-size: 2.2rem;
-    text-shadow: 2px 2px 4px #000;
+    border-left: 5px solid var(--secondary-color);
+    padding-left: 15px;
 }
 
 p {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-    line-height: 1.7;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
-/* Image gallery */
+.game-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.game-container {
+    width: 80vw;
+    height: 45vw;
+    position: relative;
+    margin: 0 auto;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 119, 0, 0.5);
+    overflow: hidden;
+}
+
+.game-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 .image-gallery {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 30px 0;
-    gap: 15px;
 }
 
-.game-image {
+.image-gallery img {
     width: 30%;
-    height: auto;
-    border: 3px solid var(--secondary-color);
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    transition: transform 0.3s ease;
 }
 
-.game-image:hover {
-    transform: scale(1.05) rotate(2deg);
-    box-shadow: 0 0 20px var(--secondary-color);
+.image-gallery img:hover {
+    transform: scale(1.05);
 }
 
-/* Table styling */
-.instructions-table {
+.controls-table {
     width: 100%;
     border-collapse: collapse;
     margin: 30px 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.instructions-table th, 
-.instructions-table td {
-    padding: 15px;
-    border: 1px solid var(--accent-color);
+.controls-table th, .controls-table td {
+    padding: 12px 15px;
     text-align: left;
+    border: 1px solid var(--secondary-color);
 }
 
-.instructions-table th {
-    background-color: rgba(255, 69, 0, 0.4);
-    color: var(--secondary-color);
-    font-family: 'DragonScale', 'Times New Roman', serif;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px #000;
+.controls-table th {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: 'PushStart', cursive;
+    font-size: 0.9rem;
 }
 
-.instructions-table tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.05);
+.controls-table tr:nth-child(even) {
+    background-color: rgba(77, 77, 255, 0.1);
 }
 
-.instructions-table tr:hover {
-    background-color: rgba(255, 69, 0, 0.15);
+.controls-table tr:hover {
+    background-color: rgba(77, 77, 255, 0.2);
 }
 
-.instructions-table td:first-child {
-    font-weight: bold;
-    color: var(--secondary-color);
-}
-
-/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-top: 4px solid var(--accent-color);
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 3px solid var(--primary-color);
+    font-style: italic;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
-    
-    .image-gallery {
-        flex-direction: column;
-    }
-    
-    .game-image {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    
-    iframe {
-        height: 60vw;
-    }
+@font-face {
+    font-family: 'Oxanium';
+    src: url('../css/fonts/oxanium.woff2') format('woff2'),
+         url('../css/fonts/oxanium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #ff7700;
+    --secondary-color: #4d4dff;
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #00e676;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: linear-gradient(to bottom, #000000, #1a0038);
+    color: var(--text-color);
+    font-family: 'Oxanium', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
