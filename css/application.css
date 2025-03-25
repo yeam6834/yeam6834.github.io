@@ -60,7 +60,7 @@ p {
 }
 
 .game-container {
-    height: 45vw;
+    height: 90vw;
     position: relative;
     margin: 0 auto;
     border: 3px solid var(--primary-color);
