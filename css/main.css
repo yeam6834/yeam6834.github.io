@@ -1,4 +1,3 @@
-/* Base styles for all pages */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -8,7 +7,6 @@ body {
     color: #333;
 }
 
-/* Header styling */
 h1 {
     background-color: #00274C;
     color: white;
@@ -25,7 +23,6 @@ h2 {
     text-align: center;
 }
 
-/* Text styling */
 p {
     font-size: 18px;
     line-height: 1.6;
@@ -33,7 +30,6 @@ p {
     max-width: 700px;
 }
 
-/* Image styling */
 img {
     max-width: 100%;
     height: auto;
@@ -45,7 +41,6 @@ img:hover {
     transform: scale(1.05);
 }
 
-/* Link styling */
 a {
     text-decoration: none;
     color: #00274C;
@@ -57,7 +52,6 @@ a:hover {
     color: #ffcc00;
 }
 
-/* Container styling */
 .container {
     max-width: 800px;
     margin: 40px auto;
@@ -68,7 +62,6 @@ a:hover {
     text-align: center;
 }
 
-/* Home button styling */
 .home-button {
     display: block;
     margin: 30px auto 0;
@@ -86,7 +79,6 @@ a:hover {
     transform: scale(1.1);
 }
 
-/* Navigation styling */
 nav {
     background-color: #ffcc00;
     padding: 10px;
@@ -106,7 +98,6 @@ nav a:hover {
     color: white;
 }
 
-/* Footer styling */
 footer {
     margin-top: 30px;
     padding: 10px;
@@ -116,7 +107,6 @@ footer {
     text-align: center;
 }
 
-/* Profile page specific styles */
 .profile-container {
     max-width: 500px;
     margin: 40px auto;
@@ -135,7 +125,6 @@ img.profile-pic {
     margin-top: 15px;
 }
 
-/* Amuse page specific styles */
 .funny-content {
     text-align: center;
 }
@@ -174,7 +163,6 @@ img.profile-pic {
     transform: scale(1.1);
 }
 
-/* Inspire page specific styles */
 .hero-content {
     text-align: center;
     
@@ -226,7 +214,6 @@ img.profile-pic {
     border: none;
 }
 
-/* Superhero page specific styles */
 .superhero-table {
     border-collapse: collapse;
     width: 90%;
@@ -264,7 +251,6 @@ img.profile-pic {
     padding: 0;
 }
 
-/* Homepage specific styles */
 .logo {
     text-align: center;
     margin: 20px auto;
