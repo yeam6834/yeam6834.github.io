@@ -1,0 +1,308 @@
+/* Base styles for all pages */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/020/040/404/non_2x/multi-layers-blue-color-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg');
+    background-size: cover;
+    color: #333;
+}
+
+/* Header styling */
+h1 {
+    background-color: #00274C;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+h2 {
+    color: #00274C;
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Text styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px auto;
+    max-width: 700px;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #00274C;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Home button styling */
+.home-button {
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.home-button img {
+    height: 50px;
+    width: auto;
+    transition: 0.3s;
+    border: none;
+}
+
+.home-button img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation styling */
+nav {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00274C;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #00274C;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Profile page specific styles */
+.profile-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+img.profile-pic {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #00274C;
+    margin-top: 15px;
+}
+
+/* Amuse page specific styles */
+.funny-content {
+    text-align: center;
+}
+
+.funny-content h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-top: 20px;
+}
+
+.funny-content p {
+    background: rgba(240, 240, 240, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.funny-content a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: #ffd700;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.funny-content a:hover {
+    background-color: #fbc02d;
+    transform: scale(1.1);
+}
+
+/* Inspire page specific styles */
+.hero-content {
+    text-align: center;
+    
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    background-color: #c8102e;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-bottom: 6px solid #fff;
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    color: #c8102e;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #c8102e;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hero-content a:hover {
+    background-color: #a50d23;
+    transform: scale(1.1);
+}
+
+.redwings-logo {
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+}
+
+/* Superhero page specific styles */
+.superhero-table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.superhero-table th, .superhero-table td {
+    border: 2px solid black;
+    padding: 15px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.superhero-table th {
+    background-color: #ffcc00;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.superhero-table td:hover {
+    background-color: #e0e0e0;
+}
+
+.superhero-table img {
+    height: 100px;
+    border-radius: 10px;
+}
+
+.superhero-table ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Homepage specific styles */
+.logo {
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}
+
+.logo img {
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+ol li {
+    background: #00274C;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+ol li:hover {
+    background: #ffcc00;
+}
+
+ol li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+ol li:hover a {
+    color: #00274C;
+}
