@@ -5,6 +5,8 @@ body {
     background-image: url('https://static.vecteezy.com/system/resources/previews/020/040/404/non_2x/multi-layers-blue-color-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg');
     background-size: cover;
     color: #333;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -27,7 +29,9 @@ p {
     font-size: 18px;
     line-height: 1.6;
     margin: 10px auto;
-    max-width: 700px;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 img {
@@ -54,12 +58,14 @@ a:hover {
 
 .container {
     max-width: 800px;
+    width: 100%;
     margin: 40px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-sizing: border-box;
 }
 
 .home-button {
@@ -83,15 +89,19 @@ nav {
     background-color: #ffcc00;
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
     text-decoration: none;
     color: #00274C;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    margin: 0 15px;
+    margin: 5px 10px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -109,16 +119,19 @@ footer {
 
 .profile-container {
     max-width: 500px;
+    width: 100%;
     margin: 40px auto;
     background: white;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-sizing: border-box;
 }
 
 img.profile-pic {
-    width: 300px;
+    width: 80%;
+    max-width: 300px;
     height: auto;
     border-radius: 50%;
     border: 3px solid #00274C;
@@ -140,9 +153,10 @@ img.profile-pic {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 .funny-content a {
@@ -165,7 +179,6 @@ img.profile-pic {
 
 .hero-content {
     text-align: center;
-    
 }
 
 .hero-content h1 {
@@ -258,7 +271,8 @@ img.profile-pic {
 }
 
 .logo img {
-    max-width: 500px;
+    max-width: 100%;
+    width: 500px;
     border-radius: 10px;
     margin: 0 auto;
     display: block;
@@ -267,6 +281,7 @@ img.profile-pic {
 ol {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 ol li {
@@ -291,4 +306,69 @@ ol li a {
 
 ol li:hover a {
     color: #00274C;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    nav {
+        padding: 5px;
+    }
+    
+    nav a {
+        font-size: 14px;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .logo img {
+        width: 90%;
+    }
+    
+    .superhero-table th, .superhero-table td {
+        padding: 8px;
+    }
+    
+    .funny-content a, .hero-content a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+    
+    nav a {
+        margin: 3px 0;
+    }
+    
+    .funny-content h2, .hero-content h2 {
+        font-size: 20px;
+    }
+    
+    .superhero-table img {
+        height: 70px;
+    }
 }
