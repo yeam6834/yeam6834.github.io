@@ -10,6 +10,8 @@
     max-width: 1200px;
     margin: 0 auto; 
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header {
@@ -21,7 +23,7 @@ header {
 
 h1 {
     font-family: 'PushStart', cursive;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--primary-color);
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(255, 119, 0, 0.7), 0 0 20px rgba(255, 119, 0, 0.5);
@@ -32,15 +34,16 @@ h1 {
 h2 {
     font-family: 'PushStart', cursive;
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 30px;
     border-left: 5px solid var(--secondary-color);
     padding-left: 15px;
 }
+
 .game-container h2 {
     font-family: 'PushStart', cursive;
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 30px;
 }
 
@@ -52,17 +55,17 @@ p {
 .game-section {
     margin-bottom: 40px;
     text-align: center;
-      display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 .game-container {
-   width: 100%;
-    max-width: 900px; /* Adjust as needed */
-    height: 500px; /* Adjust as needed */
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
     position: relative;
     margin: 0 auto;
     border: 3px solid var(--primary-color);
@@ -85,13 +88,16 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 30px 0;
+    gap: 10px;
 }
 
 .image-gallery img {
-    width: 30%;
+    width: 100%;
+    max-width: 200px;
     border-radius: 8px;
     border: 3px solid var(--accent-color);
     transition: transform 0.3s ease;
+    margin-bottom: 10px;
 }
 
 .image-gallery img:hover {
@@ -102,6 +108,8 @@ p {
     width: 100%;
     border-collapse: collapse;
     margin: 30px 0;
+    overflow-x: auto;
+    display: block;
 }
 
 .controls-table th, .controls-table td {
@@ -157,7 +165,10 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
 }
+
 /* Home Button */
 .home-button {
     display: block;
@@ -173,4 +184,49 @@ body {
 
 .home-button img:hover {
     transform: scale(1.1);
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .game-container {
+        height: 300px;
+    }
+    
+    .image-gallery {
+        justify-content: center;
+    }
+    
+    .image-gallery img {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .game-container {
+        height: 250px;
+    }
 }
