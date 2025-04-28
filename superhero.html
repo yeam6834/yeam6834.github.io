@@ -15,6 +15,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            width: 100%;
+            overflow-x: hidden;
         }
         
         h1 {
@@ -27,9 +29,16 @@
             margin-bottom: 20px;
         }
         
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        
         table {
             border-collapse: collapse;
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
@@ -55,7 +64,9 @@
         }
         
         img {
-            height: 100px;
+            height: auto;
+            max-height: 100px;
+            max-width: 100%;
             border-radius: 10px;
             transition: transform 0.3s ease;
         }
@@ -72,6 +83,8 @@
         
         .home-button img {
             transition: transform 0.3s ease;
+            height: 50px;
+            width: auto;
         }
         
         .home-button img:hover {
@@ -81,104 +94,146 @@
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+        }
+        
+        /* Mobile responsive styles */
+        @media screen and (max-width: 768px) {
+            th, td {
+                padding: 10px 5px;
+                font-size: 14px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            img {
+                max-height: 80px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            th, td {
+                padding: 8px 3px;
+                font-size: 12px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            th {
+                font-size: 14px;
+            }
+            
+            img {
+                max-height: 60px;
+            }
+            
+            ul li {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Superheroes</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Alias</th>
-                <th>Image</th>
-                <th>Superpowers</th>
-                <th>Weaknesses</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Spider Man</td>
-                <td>Peter Parker</td>
-                <td><a href="images/spidermamn.png"><img src="images/spidermamn.png" alt="Spider Man Pic"></a></td>
-                <td>
-                    <ul>
-                        <li>Strength</li>
-                        <li>Spider-sense</li>
-                        <li>Shoots Webs</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Ethyl Chloride</li>
-                        <li>Water</li>
-                        <li>Needs high structures to swing off of</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>The Incredible Hulk</td>
-                <td>Bruce Banner</td>
-                <td><a href="images/hulk.webp"><img src="images/hulk.webp" alt="Hulk Pic"></a></td>
-                <td>
-                    <ul>
-                        <li>Speed</li>
-                        <li>Super Human Strength</li>
-                        <li>Leaping</li>
-                        <li>Immortal</li>
-                        <li>Shapeshifting</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Can't Control Anger</li>
-                        <li>Adamantium</li>
-                        <li>Gamma Radiation</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Doctor Strange</td>
-                <td>Steven Strange</td>
-                <td><a href="images/drstrange.webp"><img src="images/drstrange.webp" alt="Dr Strange Pic"></a></td>
-                <td>
-                    <ul>
-                        <li>Magic</li>
-                        <li>Time Manipulation</li>
-                        <li>Teleportation</li>
-                        <li>Telepathy</li>
-                        <li>Flight</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Slow</li>
-                        <li>Melee Attacks</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Iron Man</td>
-                <td>Tony Stark</td>
-                <td><a href="images/ironman.webp"><img src="images/ironman.webp" alt="Iron Man Pic"></a></td>
-                <td>
-                    <ul>
-                        <li>Powered Armor</li>
-                        <li>Strength</li>
-                        <li>Flying</li>
-                        <li>Weapons</li>
-                        <li>Technology</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Running Out of Power</li>
-                        <li>Vulnerable to being shot down from sky</li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Alias</th>
+                    <th>Image</th>
+                    <th>Superpowers</th>
+                    <th>Weaknesses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spider Man</td>
+                    <td>Peter Parker</td>
+                    <td><a href="images/spidermamn.png"><img src="images/spidermamn.png" alt="Spider Man Pic"></a></td>
+                    <td>
+                        <ul>
+                            <li>Strength</li>
+                            <li>Spider-sense</li>
+                            <li>Shoots Webs</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Ethyl Chloride</li>
+                            <li>Water</li>
+                            <li>Needs high structures</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>The Incredible Hulk</td>
+                    <td>Bruce Banner</td>
+                    <td><a href="images/hulk.webp"><img src="images/hulk.webp" alt="Hulk Pic"></a></td>
+                    <td>
+                        <ul>
+                            <li>Speed</li>
+                            <li>Super Strength</li>
+                            <li>Leaping</li>
+                            <li>Immortal</li>
+                            <li>Shapeshifting</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Can't Control Anger</li>
+                            <li>Adamantium</li>
+                            <li>Gamma Radiation</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Doctor Strange</td>
+                    <td>Steven Strange</td>
+                    <td><a href="images/drstrange.webp"><img src="images/drstrange.webp" alt="Dr Strange Pic"></a></td>
+                    <td>
+                        <ul>
+                            <li>Magic</li>
+                            <li>Time Manipulation</li>
+                            <li>Teleportation</li>
+                            <li>Telepathy</li>
+                            <li>Flight</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Slow</li>
+                            <li>Melee Attacks</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Iron Man</td>
+                    <td>Tony Stark</td>
+                    <td><a href="images/ironman.webp"><img src="images/ironman.webp" alt="Iron Man Pic"></a></td>
+                    <td>
+                        <ul>
+                            <li>Powered Armor</li>
+                            <li>Strength</li>
+                            <li>Flying</li>
+                            <li>Weapons</li>
+                            <li>Technology</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Running Out of Power</li>
+                            <li>Vulnerable in sky</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <div class="home-button">
         <a href="index.html">
             <img height="50" src="images/homebutton.png" alt="Home Button">
